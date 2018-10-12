@@ -1,0 +1,106 @@
+#navbarTogglerDemo01 
+{
+	margin-left:0px; 
+}
+#navbarTogglerDemo01 a
+{
+	padding-left:10px; 
+}
+.bgimgcustom
+{
+	 background: lightblue url("./images/cover.jpg") no-repeat fixed center; 
+
+}
+.bgimgcustom h1
+{
+	font-weight:bolder;
+	font-size:2.3rem; 
+}
+.bgimgcustom h2
+{
+	font-weight:bolder;
+	font-size:1.5rem;
+}
+.bgimgcustom h3
+{
+	font-weight:bolder;
+}
+.bg-image-1 {
+  background: url(./images/bg-1.jpg) no-repeat center center/cover;
+  background-attachment:fixed; 
+  padding:50px;
+  padding-bottom:10px;  
+}
+
+
+.columnc {
+    float: left;
+    width: 25%;
+    padding: 10px;
+}
+
+/* Style the images inside the grid */
+.columnc img {
+    opacity: 0.8; 
+    cursor: pointer; 
+}
+
+.columnc img:hover {
+    opacity: 1;
+}
+
+/* Clear floats after the columns */
+.rowc:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* The expanding image container */
+.containerc {
+    position: relative;
+    display: none;
+}
+
+/* Expanding image text */
+#imgtextc {
+    position: absolute;
+    bottom: 15px;
+    left: 15px;
+    color: white;
+    font-size: 20px;
+}
+
+/* Closable button inside the expanded image */
+.closebtnc {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    color: white;
+    font-size: 35px;
+    cursor: pointer;
+}
+.custom-pd
+{
+	padding:30px;
+}
+@media only screen and (min-width:1250px) {
+#navbarTogglerDemo01 
+{
+	margin-left:100px; 
+}
+#navbarTogglerDemo01 a
+{
+	padding-left:35px; 
+}
+}
+@media only screen and (min-width:950px) {
+.bgimgcustom h1
+{
+	font-size:3rem; 
+}
+.bgimgcustom h2
+{
+	font-size:2rem;
+}
+}
