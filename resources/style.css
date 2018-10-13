@@ -8,7 +8,7 @@
 }
 .bgimgcustom
 {
-	 background: lightblue url("./images/cover.jpg") no-repeat fixed center; 
+	 background: rgba(60,60,60,1) url("./images/cover.jpg") no-repeat fixed center; 
 
 }
 .bgimgcustom h1
@@ -31,58 +31,75 @@
   padding:50px;
   padding-bottom:10px;  
 }
-
-
-.columnc {
-    float: left;
-    width: 25%;
-    padding: 10px;
-}
-
-/* Style the images inside the grid */
-.columnc img {
-    opacity: 0.8; 
-    cursor: pointer; 
-}
-
-.columnc img:hover {
-    opacity: 1;
-}
-
-/* Clear floats after the columns */
-.rowc:after {
-    content: "";
-    display: table;
-    clear: both;
-}
-
-/* The expanding image container */
-.containerc {
-    position: relative;
-    display: none;
-}
-
-/* Expanding image text */
-#imgtextc {
-    position: absolute;
-    bottom: 15px;
-    left: 15px;
-    color: white;
-    font-size: 20px;
-}
-
-/* Closable button inside the expanded image */
-.closebtnc {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    color: white;
-    font-size: 35px;
-    cursor: pointer;
+.custom-fade:hover
+{
+opacity:0.7;  
 }
 .custom-pd
 {
 	padding:30px;
+}
+#A1
+{	animation-name:exp;
+	animation-iteration-count:infinite;
+	animation-duration:20s; 
+	animation-timing-function:linear;
+}
+@keyframes exp
+{
+	0%{color:rgba(0,0,0,0); margin-right:-50px; }
+	5%{color:rgba(255,255,255,1); margin-right:0px; }
+	100%{color:rgba(255,255,255,1); margin-right:0px; }
+}#A2
+{	animation-name:exp1;
+	animation-iteration-count:infinite;
+	animation-duration:20s; 
+	animation-timing-function:linear;
+}
+@keyframes exp1
+{
+	0%{color:rgba(0,0,0,0); }
+	5%{color:rgba(0,0,0,0);  }
+	10%{color:rgba(0,0,0,0);margin-right:-50px;  }
+	15%{color:rgba(255,255,255,1);margin-right:0px;  }
+	100%{color:rgba(255,255,255,1); margin-right:0px; }
+}#A3
+{	animation-name:exp2;
+	animation-iteration-count:infinite;
+	animation-duration:20s; 
+	animation-timing-function:linear;
+}
+@keyframes exp2
+{
+	0%{color:rgba(0,0,0,0);  }
+	15%{color:rgba(0,0,0,0); margin-right:-50px; }
+	20%{color:rgba(255,255,255,1); margin-right:0px; }
+	100%{color:rgba(255,255,255,1); margin-right:0px; }
+}#A4
+{	animation-name:exp3;
+	animation-iteration-count:infinite;
+	animation-duration:20s; 
+	animation-timing-function:linear;
+}
+@keyframes exp3
+{
+	0%{color:rgba(0,0,0,0);}
+	20%{color:rgba(0,0,0,0); margin-right:-50px; }
+	25%{color:rgba(255,255,255,1); margin-right:0px; }
+	100%{color:rgba(255,255,255,1); margin-right: 0px; }
+}#A5
+{	animation-name:exp4;
+	animation-iteration-count:infinite;
+	animation-duration:20s; 
+	animation-timing-function:linear;
+}
+@keyframes exp4
+{
+
+	0%{color:rgba(0,0,0,0);}
+	25%{color:rgba(0,0,0,0); margin-right:-50px; }
+	30%{color:rgba(255,255,255,1); margin-right:0px; }
+	100%{color:rgba(255,255,255,1); margin-right: 0px; }
 }
 @media only screen and (min-width:1250px) {
 #navbarTogglerDemo01 
