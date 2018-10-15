@@ -16,7 +16,8 @@ Technology used:
 3.css
 4.php
 5.mysql
-6.github
+6.github & git
+
 
 
 
